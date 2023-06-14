@@ -54,7 +54,7 @@ class _BankingMenuState extends State<BankingMenu> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         5.height,
-                        Text("Manish Dayma",
+                        Text("T.HUALCHAROENTON",
                             style: boldTextStyle(
                                 color: Banking_TextColorPrimary, size: 18)),
                         5.height,
@@ -64,7 +64,8 @@ class _BankingMenuState extends State<BankingMenu> {
                                 size: 16,
                                 fontFamily: fontMedium)),
                         5.height,
-                        Text(Banking_lbl_app_Name,
+                        // Text(Banking_lbl_app_Name,
+                        Text(Banking_lbl_Total_Asset + ": 139,123,456,78",
                             style: primaryTextStyle(
                                 color: Banking_TextColorSecondary,
                                 size: 16,

@@ -69,8 +69,14 @@ class TopCard extends StatelessWidget {
   final String name;
   final String acno;
   final String bal;
+  final String maket;
 
-  TopCard({Key? key, required this.name, required this.acno, required this.bal})
+  TopCard(
+      {Key? key,
+      required this.name,
+      required this.acno,
+      required this.bal,
+      required this.maket})
       : super(key: key);
 
   @override
@@ -108,11 +114,21 @@ class TopCard extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("Balance", style: secondaryTextStyle(size: 16))
+              Text("Maket Value", style: secondaryTextStyle(size: 16))
                   .paddingOnly(left: 8, top: 8, bottom: 8),
               Text(bal,
                       style:
                           primaryTextStyle(color: Banking_TextLightGreenColor))
+                  .paddingOnly(right: 8, top: 8, bottom: 8),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text("Line Available", style: secondaryTextStyle(size: 16))
+                  .paddingOnly(left: 8, top: 8, bottom: 8),
+              Text(maket,
+                      style: primaryTextStyle(color: Banking_TextColorYellow))
                   .paddingOnly(right: 8, top: 8, bottom: 8),
             ],
           )

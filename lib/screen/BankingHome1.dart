@@ -10,6 +10,7 @@ import '../utils/BankingContants.dart';
 import '../utils/BankingDataGenerator.dart';
 import '../utils/BankingImages.dart';
 import '../utils/BankingWidget.dart';
+import '../utils/BankingStrings.dart';
 
 class BankingHome1 extends StatefulWidget {
   static String tag = '/BankingHome1';
@@ -62,12 +63,12 @@ class BankingHome1State extends State<BankingHome1> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Text("Hello,Manish",
+                        Text("Hello,T.HUALCHAROENTON",
                             style: primaryTextStyle(
                                 color: Banking_TextColorWhite,
                                 size: 16,
                                 fontFamily: fontRegular)),
-                        Text("How are you today?",
+                        Text(Banking_lbl_Total_Asset + ": 139,123,456,78",
                             style: primaryTextStyle(
                                 color: Banking_TextColorWhite,
                                 size: 16,
@@ -104,17 +105,20 @@ class BankingHome1State extends State<BankingHome1> {
                             child: PageView(
                               children: [
                                 TopCard(
-                                    name: "Default Account",
-                                    acno: "1234567899",
-                                    bal: "\$12,500"),
+                                    name: "Cash Balance ",
+                                    acno: "[xxxxxx-1]",
+                                    bal: "12,500 THB",
+                                    maket: "84,858.2 THB"),
                                 TopCard(
                                     name: "Adam Johnson",
-                                    acno: "9874563210",
-                                    bal: "\$18,000"),
+                                    acno: "[xxxxxx-2]",
+                                    bal: "18,000 THB",
+                                    maket: "84,858.2 THB"),
                                 TopCard(
                                     name: "Ana Willson",
-                                    acno: "5821479630",
-                                    bal: "\$12,500"),
+                                    acno: "[xxxxxx-3]",
+                                    bal: "12,500 THB",
+                                    maket: "84,858.2 THB"),
                               ],
                               onPageChanged: (value) {
                                 setState(() => currentIndexPage = value);
@@ -126,7 +130,7 @@ class BankingHome1State extends State<BankingHome1> {
                             alignment: Alignment.center,
                             child: DotsIndicator(
                               dotsCount: 3,
-                              position: currentIndexPage.toDouble(),
+                              position: currentIndexPage.toDouble().toInt(),
                               decorator: DotsDecorator(
                                 size: Size.square(8.0),
                                 activeSize: Size.square(8.0),

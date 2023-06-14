@@ -100,7 +100,7 @@ class BankingSliderWidgetState extends State<BankingSliderWidget> {
         16.height,
         DotsIndicator(
           dotsCount: mList.length,
-          position: currentIndexPage.toDouble(),
+          position: currentIndexPage.toDouble().toInt(),
           decorator: DotsDecorator(
             size: const Size.square(5.0),
             activeSize: const Size.square(8.0),
