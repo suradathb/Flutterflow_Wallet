@@ -65,7 +65,7 @@ class _BankingMenuState extends State<BankingMenu> {
                                 fontFamily: fontMedium)),
                         5.height,
                         // Text(Banking_lbl_app_Name,
-                        Text(Banking_lbl_Total_Asset + ": 139,123,456,78",
+                        Text(Banking_lbl_Total_Asset + ": 139,123,456,78 THB",
                             style: primaryTextStyle(
                                 color: Banking_TextColorSecondary,
                                 size: 16,

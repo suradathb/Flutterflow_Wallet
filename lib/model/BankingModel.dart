@@ -76,3 +76,10 @@ class BankingHomeModel2 {
 
   BankingHomeModel2({this.title, this.icon, this.color, this.charge});
 }
+
+class BankingSubMenuModel {
+  String? icon = "";
+  String? menu = "";
+
+  BankingSubMenuModel({this.icon, this.menu});
+}

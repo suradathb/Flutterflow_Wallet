@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import '../model/BankingModel.dart';
 import 'BankingColors.dart';
 import 'BankingImages.dart';
@@ -288,6 +290,15 @@ List<BankingLocationModel> bankingLocationList() {
 
   var list4 = BankingLocationModel(location: "Branch Maltly", m: "2.5km");
   list.add(list4);
+
+  return list;
+}
+
+List<BankingSubMenuModel> bankingSubMenuList() {
+  List<BankingSubMenuModel> list = [];
+
+  var list1 = BankingSubMenuModel(icon: "Icons", menu: "ฝากเงิน");
+  list.add(list1);
 
   return list;
 }

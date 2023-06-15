@@ -81,6 +81,13 @@ class TopCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<String> stringList = acno.split('-');
+    var Banking_TextColorGreenShow = Color(0xFF008000);
+    // print(listAsString);
+    if (stringList[0] == "") {
+      Banking_TextColorGreenShow = Color(0xFFD80027);
+    }
+
     return Container(
       width: context.width(),
       height: context.height(),
@@ -104,22 +111,23 @@ class TopCard extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("Account Number", style: secondaryTextStyle(size: 16))
-                  .paddingOnly(left: 8, top: 8, bottom: 8),
-              Text(acno,
-                      style: primaryTextStyle(color: Banking_TextColorYellow))
-                  .paddingOnly(right: 8, top: 8, bottom: 8),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
               Text("Maket Value", style: secondaryTextStyle(size: 16))
                   .paddingOnly(left: 8, top: 8, bottom: 8),
               Text(bal,
                       style:
                           primaryTextStyle(color: Banking_TextLightGreenColor))
                   .paddingOnly(right: 8, top: 8, bottom: 8),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text("", style: secondaryTextStyle(size: 16))
+                  .paddingOnly(left: 8, top: 8, bottom: 8),
+              Text(acno,
+                      style:
+                          primaryTextStyle(color: Banking_TextColorGreenShow))
+                  .paddingOnly(right: 8, top: 1, bottom: 1),
             ],
           ),
           Row(
